@@ -1,14 +1,14 @@
 on: 0.0
 os: linux
 files:
-  - source: /index.html
-    destination: /var/www/html/
+	- source: /
+	destination: /var/www/html/
 hooks:
-    BeforeInstall:
-        - location: deploy/before_install
+	BeforeInstall:
+	- location: deploy/before_install.sh
 	timeout: 300
 	runas: root
-    AfterInstall:
-	- location: deploy/restart_server
+AfterInstall:
+	- location: deploy/restart_server.sh
 	timeout: 300
 	runas: root
