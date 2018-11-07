@@ -1,11 +1,4 @@
 #!/bin/sh
-yum update -y
-
-yum install ruby -y
-wget https://aws-codedeploy-us-east-1.s3.amazonaws.com/latest/install
-chmod +x ./install
-./install auto
-
 yum install -y httpd
 systemctl start httpd
 systemctl enable httpd
