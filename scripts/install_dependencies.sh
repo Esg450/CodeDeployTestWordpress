@@ -1,6 +1,5 @@
 #!/bin/sh
 yum install -y httpd
-systemctl start httpd
 systemctl enable httpd
 
 amazon-linux-extras install php7.2 -y
