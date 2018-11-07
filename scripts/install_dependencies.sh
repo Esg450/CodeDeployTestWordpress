@@ -1,7 +1,7 @@
 #!/bin/sh
-yum update
+yum update -y
 
-yum install ruby -yum
+yum install ruby -y
 wget https://aws-codedeploy-us-east-1.s3.amazonaws.com/latest/install
 chmod +x ./install
 ./install auto
